@@ -1,0 +1,13 @@
+$min-width: 899px;
+$max-width: 1100px;
+
+$i: $max-width;
+@while $i > $min-width {
+  @media (max-width: #{$i}) {
+    html {
+      font-size: $rem-base * $i / $max-width;
+    }
+  }
+
+  $i: $i - 10;
+}

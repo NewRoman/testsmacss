@@ -1,0 +1,42 @@
+@import "utilities/settings";
+
+@import "compass/css3/border-radius";
+@import "compass/css3/border-radius";
+
+.additionally {
+  @include border-radius(5px);
+
+  padding: 0 5px;
+  
+  border: 1px solid #d0d0d0;
+
+  .accordion {
+    padding: 13px 15px 44px 15px;
+
+    .accordion-navigation {
+      
+      a {
+        padding: 0;
+        background: none;
+
+        line-height: 30px;
+
+        text-decoration: underline;
+        color:  #219cd7;
+        font-size: rem-calc(16);
+
+        &:hover {
+          color: #f8a522;
+        }
+      }
+
+      .content {
+        padding: 0;
+        padding-bottom: 26px;
+
+        color:  #000;
+        font-size: rem-calc(14);
+      }
+    }
+  }
+}

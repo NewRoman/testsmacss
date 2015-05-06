@@ -1,0 +1,130 @@
+@import "compass/css3/inline-block";
+@import "compass/css3/border-radius";
+@import "compass/layout/stretching";
+
+@import "utilities/classes.scss";
+
+.wrap-trust-us {
+  margin-top: rem-calc(30);
+  padding-top: rem-calc(30);
+  border-top: rem-calc(2) #a2a2a2 dotted;
+  clear: both;
+
+  .trust-us {
+    @include border-radius(5px 5px 0 0);
+    
+    width: 61.9%;
+    padding: rem-calc(17) 0 rem-calc(26) rem-calc(20);
+    margin-top: rem-calc(30);
+    background: no-repeat url('../images/trust-us-cloud-bg.png'); 
+  
+    ul.row-menu {
+      @extend %resset-ul;
+
+      margin-bottom: rem-calc(22)!important;
+      width: 100%;
+
+      &>li {
+        @include inline-block;
+
+        vertical-align: top;
+        width: 24.3%;
+
+        &>ul {
+          @extend %resset-ul;
+
+          &>li {
+            line-height: rem-calc(20);
+
+            &:first-child {
+              a {
+                font-family: Tahoma, Verdana, Segoe, sans-serif;
+                font-weight: 600;
+              }
+            }
+
+            a {
+              font-family: Tahoma, Verdana, Segoe, sans-serif;
+              text-decoration: underline;
+              font-size: rem-calc(14);
+              color: #50add9;
+              &:hover{
+                color: #f7941d;
+              }
+            }
+          }
+        }
+      }
+    }
+  } 
+
+  .aside-trust-us {
+    
+    width: 38%;
+    padding: 0 0 0 rem-calc(20);
+    margin-top: rem-calc(20);
+    
+    h4 {
+      margin-bottom: rem-calc(16);
+      margin-top: rem-calc(7);
+      font-family: Tahoma, Verdana, Segoe, sans-serif;
+      font-size: rem-calc(20);
+    }
+
+    div.plhold {
+      @include inline-block;
+      
+      margin-right: 4%;
+      margin-bottom: rem-calc(15);
+      width: 20.9%;
+      
+      &:nth-child(4n+5) {
+        margin-right: 0;
+      }
+    }
+
+    div.statistic {
+      position: relative;
+      
+      margin-bottom: rem-calc(15); 
+      width: 100%;
+
+      &:last-child {
+        padding-top: rem-calc(20);
+
+        &:after {
+          @include stretch(0, false, false, -rem-calc(4));
+
+          content: "";
+          display: block;
+          width: 102%;
+
+          border-top: 2px #dfddde dotted;
+        }
+      }
+      
+      div {
+        @include inline-block;
+
+        vertical-align: top;
+
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
+        font-size: rem-calc(13);
+        line-height: rem-calc(20);
+
+        &>span {
+          display: block;
+          width: 100%;
+
+          font-family: 'PFDinTextCondPro', sans-serif;
+          font-size: rem-calc(27);
+          color: #219cd7;
+        }
+
+        &:first-child {
+          width: 45%;
+        }
+      }
+    }
+  } 
+}

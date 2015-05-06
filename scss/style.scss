@@ -1,0 +1,298 @@
+
+
+// @import "media-queries";
+
+@import "foundation/components/block-grid";
+@import "foundation/components/breadcrumbs";
+@import "foundation/components/grid";
+@import "foundation/components/tabs";
+@import "foundation/components/reveal";
+@import "foundation/components/orbit";
+@import "foundation/components/accordion";
+@import "foundation/components/forms";
+@import "foundation/components/type";
+@import "foundation/components/buttons";
+@import "foundation/components/button-groups";
+@import "foundation/components/visibility";
+@import "foundation/components/top-bar";
+@import "foundation/components/dropdown";
+@import "foundation/components/dropdown-buttons";
+
+@import "compass/css3/border-radius";
+@import "compass/css3/transition";
+@import "compass/css3/inline-block";
+@import "compass/css3/images";
+@import "compass/css3/box-shadow"; 
+@import "compass/css3/font-face";
+@import "compass/css3/filter";
+@import "compass/layout/stretching";
+
+@import "compass/utilities/sprites";
+@import "icons/*.png";
+@include all-icons-sprites(true);
+
+@import "base/index";
+@import "layouts/index";
+@import "modules/index";
+@import "state/index";
+@import "utilities/index";
+
+@font-face {
+    font-family: 'PFDinTextCondPro-bold';
+    src: url('../fonts/pfdintextcondpro-bold-webfont.eot');
+    src: url('../fonts/pfdintextcondpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdintextcondpro-bold-webfont.woff') format('woff'),
+         url('../fonts/pfdintextcondpro-bold-webfont.ttf') format('truetype'),
+         url('../fonts/pfdintextcondpro-bold-webfont.svg#pf_din_text_cond_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'PFDinTextCondPro';
+    src: url('../fonts/pfdintextcondpro-regular-webfont.eot');
+    src: url('../fonts/pfdintextcondpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pfdintextcondpro-regular-webfont.woff') format('woff'),
+         url('../fonts/pfdintextcondpro-regular-webfont.ttf') format('truetype'),
+         url('../fonts/pfdintextcondpro-regular-webfont.svg#pf_din_text_cond_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+// @import "modules/header";
+// @import "modules/footer";
+
+@import "breadcrumbs";
+
+@import "form-callback";
+@import "pagination";
+@import "seo-block";
+
+@import "trust-us";
+
+@import "blocks/gallery-fancybox";
+@import "blocks/_wide-dropdown";
+
+
+@import "education";
+
+@import "what2do";
+
+.hidden {
+  visibility: hidden;
+}
+.none{
+  display: none;
+}
+.clear{
+  clear: both;
+}
+
+.wrapper {
+  position: relative;
+
+  margin: 0 auto;
+  max-width: 1100px;
+  min-width: 885px;
+
+  &.foot:before {
+    height: 0;
+  }
+}
+
+.title-after {
+  position: relative;
+
+  &:after {
+    @include stretch(75%, 0, false, false);
+
+    content: '';
+
+    height: rem-calc(10);
+    width: 100%;
+    display: block;
+
+    background: url(../images/title-border.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &.title-after-long:after {
+    background: url(../images/title-border-long.png);
+  }
+}
+
+.title-article {
+  padding: rem-calc(22) rem-calc(5) rem-calc(14) rem-calc(24);
+  
+  border-bottom: 2px dotted #a0a0a0;
+
+  h5.rhombus {
+    margin: 0;
+    line-height: 1;
+
+    color: #000;
+    font-family: 'PFDinTextCondPro', sans-serif;
+    font-size: rem-calc(20);
+    letter-spacing: -1px;
+    &:after {
+      background: #219cd7;
+    }
+  }
+}
+
+
+
+
+.city {
+  position: relative;
+  bottom: -8px;
+  padding-left: rem-calc(9);
+  max-width: 100px;
+
+  div.dropdown {
+    width: auto;
+    background-color: transparent;
+    border: none;
+    &:hover {
+      box-shadow: none;
+    }
+    span.selected {
+      background-color: transparent;
+      border: none;
+      text-decoration: underline;
+      color:  #302c89;
+      font-size: 13px;
+      &:before, &:after {
+        display: none;
+      }
+    }
+    span.carat {
+      margin-top: -3px;
+      left: -2px;
+      right: auto;
+    }
+    div {
+      width: 100px;
+      border: none;
+      ul {
+        li {
+          background-color:  #43bcf6;
+          border-bottom: 1px solid #65defb;
+          color:  #2f2483;
+          font-size: 13px;
+          word-wrap: break-word;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+    &.open, &.focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.phone {
+  margin-left: rem-calc(18);
+  margin-right: rem-calc(26);
+
+  i.icons-phone {
+    vertical-align: bottom;
+
+    width: rem-calc(12);
+    height: rem-calc(16);
+    display: inline-block;
+  }
+
+  span {
+    color:  #000;
+    font-size: rem-calc(18);
+
+    i {
+      font-style: normal;
+      font-size: rem-calc(14);
+    }
+  }
+}
+
+
+.rating {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+
+  unicode-bidi: bidi-override;
+  i {
+    color: #a3a3a3;
+    &.active{
+      color: #219cd7;
+    }
+  }
+}
+
+div.dropdown > div ul li{
+  font-size: 15px;
+  font-weight: inherit!important;
+  line-height: 1.1;
+}
+
+div.dropdown span.selected{
+  padding: 5px 12px;
+  font-size: 15px;
+  line-height: 1.1;
+  color: #9b9b9b;
+}
+
+/* Костыль для хайслайда */
+.highslide {
+  div, span, applet, object, iframe,
+  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed, 
+  figure, figcaption, footer, header, hgroup, 
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+  article, aside, details, figcaption, figure, 
+  footer, header, hgroup, menu, nav, section {
+    display: block;
+  }
+  body {
+    line-height: 1;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  blockquote, q {
+    quotes: none;
+  }
+  blockquote:before, blockquote:after,
+  q:before, q:after {
+    content: '';
+    content: none;
+  }
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+}
+
+

@@ -1,0 +1,48 @@
+@import "utilities/settings";
+
+@import "compass/css3/inline-block";
+@import "compass/layout/stretching";
+
+div.statistic {
+  position: relative;
+  
+  margin-bottom: rem-calc(15); 
+  width: 100%;
+
+  &:last-child {
+    padding-top: rem-calc(20);
+
+    &:after {
+      @include stretch(0, false, false, -rem-calc(4));
+
+      content: "";
+      display: block;
+      width: 102%;
+
+      border-top: 2px #dfddde dotted;
+    }
+  }
+  
+  div {
+    @include inline-block;
+
+    vertical-align: top;
+
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: rem-calc(13);
+    line-height: rem-calc(20);
+
+    &>span {
+      display: block;
+      width: 100%;
+
+      font-family: 'PFDinTextCondPro', sans-serif;
+      font-size: rem-calc(27);
+      color: #219cd7;
+    }
+
+    &:first-child {
+      width: 45%;
+    }
+  }      
+}

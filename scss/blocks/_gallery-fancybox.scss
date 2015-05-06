@@ -1,0 +1,109 @@
+@import "utilities/settings";
+
+@import "compass/layout/stretching";
+
+.fancybox-overlay {
+  overflow: hidden;
+}
+
+.fancybox-skin {
+  padding: 56px 73px 65px !important;
+
+  border-radius: 5px;
+
+  .fancybox-name {
+    @include stretch(0, false, false, 0);
+
+    width: 100%;
+    margin-top: 75px;
+    padding: 0 50px; 
+
+    span {
+      display: block;
+
+      color: #000;
+      text-align: center;
+      font-family: 'PFDinTextCondPro', sans-serif;
+      font-size: rem-calc(18);
+    }
+  }
+
+  .fancybox-close {
+    top: 10px;
+    right: 10px;
+
+    width: 22px;
+    height: 22px;
+
+    border-radius: 50%;
+    background: #219cd7;
+
+    &:after {
+      content: "×";
+
+      color: #fff;
+      font-weight: 100;
+
+      display: block;
+      height: inherit;
+      line-height: 20px;
+      text-align: center;
+
+      font-size: rem-calc(18);
+    }
+  }
+
+  .fancybox-title {
+    color:  #000;
+    font-size: rem-calc(14);
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+  }
+
+  .fancybox-nav {
+
+    span {
+      visibility: visible;
+      width: 40px;
+      height: 40px;
+      display: block;
+
+      border-radius: 50%;
+      background: #219cd7;
+
+      &:after {
+        content: '';
+
+        width: 0;
+        height: 0;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+
+    &.fancybox-next span {
+      margin-right: rem-calc(-68);
+
+      &:after {
+        margin-top: 12px;
+        margin-right: 13px;
+
+        border-top: 8px solid transparent;
+        border-left: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+      }
+    }
+
+    &.fancybox-prev span {
+      margin-left: rem-calc(-68);
+
+      &:after {
+        margin-top: 12px;
+        margin-left: 13px;
+
+        border-top: 8px solid transparent;
+        border-right: 10px solid #fff;
+        border-bottom: 8px solid transparent;
+      }
+    }
+  }
+}

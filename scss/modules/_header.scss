@@ -1,0 +1,297 @@
+
+
+header {
+  min-height: rem-calc(100);
+
+  background: url(../images/sky-gradient.png);
+  background-size: 100%;
+  background-position: top;
+
+  z-index: 9!important;
+
+  .top {
+    position: relative;
+
+    background-color: rgba(255, 255, 255,0.5);
+
+    padding: rem-calc(9) 0;
+
+    .row {
+      font-size: 0;
+      white-space: nowrap;
+
+      & > * {
+        vertical-align: bottom;
+      }
+
+      a {
+        border-bottom: 1px dashed #302c89;
+        color: #302c89;
+        font-size: rem-calc(14);
+        text-decoration: none;
+      }
+
+      & > div {
+        display: inline-block;
+        line-height: 1;
+
+        &.phone {
+
+          & > span {
+
+            i {
+              display: inline-block;
+              vertical-align: bottom;
+            }
+
+            span {
+
+              display: inline-block;
+              vertical-align: bottom;
+              line-height: 13px;
+            }
+          }
+        }
+
+        &.consultation {
+          position: relative;
+          bottom: -1px;
+          margin-left: rem-calc(12);
+          margin-right: rem-calc(12);
+        }
+
+        &.look {
+
+          i.icons-star {
+            $size: rem-calc(16);
+
+            vertical-align: bottom;
+
+            width: $size;
+            height: $size;
+            display: inline-block;
+          }
+        }
+
+        &.course {
+          float: right;
+          margin-top: 14px;
+
+          span {
+              margin-left: 2px;
+              font-family: 'Open Sans', sans-serif;
+              font-weight: 600;
+              font-size: 0.91rem;
+            i {
+                font-style: normal;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 600;
+                color: #219cd7;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .main {
+    position: relative;
+
+    height: rem-calc(61);
+
+    .row {
+      height: 100%;
+    }
+
+    .logo {
+      display: inline-block;
+      height: 100%;
+
+      img {
+        height: 100%;
+      }
+    }
+
+    .megamenu {
+      @include stretch(false, 0, 0, false);
+      @include border-radius(5px 5px 0 0);
+
+      display: inline-block;
+      margin-right: rem-calc(20);
+      vertical-align: bottom;
+
+      background-color:  #f7941d;
+
+      ul {
+        margin: 0;
+      }
+
+      ul.button-group {
+        font-size: 14px;
+
+        & > li {
+          position: static;
+
+          margin: 0;
+
+          &:hover {
+
+            a.nav:before,
+            & + li a.nav:before {
+              content: none;
+            }
+            &>.content {
+              display: flex;
+            }
+            &>a.nav {
+              background-color:  #219cd7;
+            }
+            &>a.act {
+              background-color: #f7941d
+            }
+            
+
+          }
+
+          &:first-of-type {
+
+             a.nav:before {
+              content: none;
+            }
+          }
+
+          // В последних 4 елементах меню, мега-меню выравнивается по правому краю.
+
+          .to_right{
+            right: 0!important;
+          }
+
+          a.nav {
+            @include border-radius(5px 5px 0 0);
+            @include transition(.3s);
+
+            position: relative;
+
+            padding: rem-calc(11) rem-calc(11);
+            display: inline-block;
+            line-height: 1;
+            float: left;
+            text-decoration: none;
+            background-color: #f7941d;
+
+            color: #fff;
+            .act {
+              &:hover, &:focus, &:active {
+                // background-color: #f7941d !important;
+              }
+            }
+            // &:hover, &:focus, &:active {
+            //   background-color:  #219cd7;
+            // }
+
+            &:before {
+              @include transition(.3s);
+              @include stretch(0, false, false, 0);
+
+              content: '';
+
+              margin-top: rem-calc(7);
+
+              width: rem-calc(1);
+              height: rem-calc(23);
+              display: block;
+              
+              background: #fff!important;
+            }
+          }
+ 
+
+          .content {
+            position: absolute;
+            top: 100%;
+            z-index: 9999;
+
+            padding: 20px 20px;
+            display: none;
+
+            background: $white;
+            white-space: nowrap;
+            
+            &:hover {
+              display: flex;
+            }
+
+            & > div {
+              display: inline-block;
+              float: left;
+
+              margin-right: rem-calc(25);
+
+              a.head {
+                display: block;
+
+                font-family: Tahoma, Verdana, Segoe, sans-serif;
+                font-size: rem-calc(17);
+                text-decoration: underline;
+                font-weight: 600;
+              }
+
+              ul {
+                display: inline-block;
+                vertical-align: top;
+                margin-right: rem-calc(10);
+
+                font-size: 0;
+
+                li {
+                  list-style: none;
+
+                  max-width: rem-calc(200);
+
+                  a {
+                    color:  #219cd7;
+                    font-family: Tahoma, Verdana, Segoe, sans-serif;
+                    font-size: rem-calc(17);
+                    text-decoration: underline;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    nav {
+
+      .akcii_menu{
+        background-color: #ff0000;
+        &:hover, &:focus, &:active {
+          background-color:  #ff0000;
+        }
+      }
+      a.act{
+        &:hover, &:focus, &:active {
+          // background-color: #f7941d !important;
+        }
+      }
+    }
+  }
+}
+.wrapper header .main div .megamenu ul li a.act{
+  &:hover, &:focus, &:active {
+    // background-color: transparent !important;
+    &:before{
+      background-color: #fff;
+    }
+  }
+}
+.wrapper header .main div .megamenu ul li a.akcii_menu{
+  background-color: red !important;
+  &:hover, &:focus, &:active {
+    background-color: red !important;
+    &:before{
+      background-color: #fff;
+    }
+  }
+}

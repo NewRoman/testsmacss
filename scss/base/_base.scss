@@ -1,0 +1,50 @@
+body * {
+  font-size: rem-calc(14);
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+
+body {
+  background-color: #f1f1f1;
+  background-image: url(../images/back.png);
+  background-repeat: no-repeat;
+  background-color: #f1f1f1;
+  background-position: top;
+  height: auto;
+}
+
+
+
+button {
+
+  @include border-radius(12px);
+
+  $color: #f7941d;
+  $size: 21px;
+
+  position: relative;
+
+  line-height: 1;
+  padding: rem-calc(3) rem-calc(10);
+  margin: 0 rem-calc(10);
+  height: $size;
+
+  font-size: rem-calc(14);
+
+  background: $color;
+  cursor: pointer;
+
+  &:focus{
+
+    outline: 0;
+    background-color: #39a2d8;
+  }
+  &:hover {
+    background-color: #39a2d8;
+  }
+}
+
+main {
+  min-height: calc(100vh - 160px);
+
+  background: #fff;
+}

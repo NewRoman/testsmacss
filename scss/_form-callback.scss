@@ -1,0 +1,121 @@
+
+@import "compass/css3/inline-block";
+
+.form_callback {
+  width: rem-calc(250);
+  padding: rem-calc(20) rem-calc(30);
+  border-radius: rem-calc(5);
+  background-color:  #60c2f1;
+
+  p {
+    line-height: rem-calc(17);
+  }
+
+  i {
+    @include inline-block();
+    float: left;
+    margin-top: rem-calc(5);
+  }
+
+  input, textarea {
+    height: 1.875rem;
+    border-radius: 0.3125rem;
+    font-size: 0.875rem;
+    display: inline-block;
+    width: 88%;
+    float: right;
+  }
+
+  span.inform_area {
+    color: #fff;
+    font-size: rem-calc(12);
+  }
+
+  .wrap_input_name {
+
+  }
+  
+  .wrap_input_phone {
+    margin-top: rem-calc(8);
+  }
+  
+  
+  a {
+    display: block;
+    text-align: center;
+    color:  #2f2483;
+    font-size: rem-calc(12);
+    text-decoration: underline;
+    margin: rem-calc(2) auto 0 auto;
+  }
+
+  button {
+    margin: 0.6875rem auto 0;
+    width: 85%;
+    height: 1.75rem;
+    padding: 0;
+    font-size: 0.75rem;
+    display: block;
+    &:focus{
+      outline: 0;
+    }
+  }
+
+}
+
+.form_callback_help {
+  @extend .form_callback;
+
+  padding: rem-calc(20) rem-calc(27);
+  width: 107%;
+  
+  p {
+    margin-bottom: rem-calc(15);
+    padding: 0 rem-calc(12);
+    font-size: rem-calc(17);
+    line-height: rem-calc(18);
+    text-align: center;
+  }
+
+  input, textarea {
+    width: 100%;
+    margin: 0;
+
+  }
+
+  textarea {
+    height: rem-calc(139);
+  }
+
+  input {
+    margin-top: rem-calc(10);
+  }
+
+  form {
+    &>span.inform_area {
+      display: block;
+      margin-top: rem-calc(10);
+      font-size: rem-calc(10);
+      text-align: center;
+    }
+
+    button {
+      margin: rem-calc(4) rem-calc(0) rem-calc(0) rem-calc(15);
+      width: 85%;
+
+    }
+  }
+
+  .wrap_message, .wrap_input_phone, .wrap_input_name {
+    position: relative;
+
+    &:before {
+      content: '*';
+      position: absolute;
+      top: -rem-calc(3);
+      right: -rem-calc(14);
+      color: #fff;
+    }
+  }
+
+}
