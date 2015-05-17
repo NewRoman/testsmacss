@@ -1,0 +1,23 @@
+.m-partners {
+  margin-top: 15px;
+
+  &-title {
+    margin: 0;
+    margin-bottom: 12px;
+
+    line-height: 1;
+  }
+  
+  &-list{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+
+    &-item {
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

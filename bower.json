@@ -1,10 +1,8 @@
 {
-  "name": "Avalon",
+  "name": "testsmacss",
   "version": "0.1",
   "authors": [
-  "Roman Gorbuniov",
-  "Vitaliy Yavurek",
-  "Bohdan Hulchack <b.hulchak@delfit.com>" 
+  "Roman Gorbunov"
   ],
   "description": "",
   "license": "Proprietary",
@@ -15,12 +13,7 @@
     "bower_components"
   ],
   "dependencies": {
-    "fastclick": "~1.0.3",
     "font-awesome": "~4.2.0",
-    "foundation": "~5.4.7",
-    "jquery-maskedinput": "~1.3",
-    "easydropdown": "latest",
-    "ion.calendar": "https://github.com/IonDen/ion.calendar.git",
-    "fancybox": "latest"
+    "foundation": "~5.4.7"
   }
 }

@@ -1,18 +1,15 @@
-body * {
-  font-size: rem-calc(14);
-  font-family: Tahoma, Verdana, Segoe, sans-serif;
-}
 
 body {
+  height: auto;
+
   background-color: #f1f1f1;
   background-image: url(../images/back.png);
   background-repeat: no-repeat;
   background-color: #f1f1f1;
   background-position: top;
-  height: auto;
+
+  font-size: 14px;
 }
-
-
 
 button {
 
@@ -24,14 +21,16 @@ button {
   position: relative;
 
   line-height: 1;
-  padding: rem-calc(3) rem-calc(10);
-  margin: 0 rem-calc(10);
+  padding: 2px 10px;
+  margin: 0 10px;
   height: $size;
 
-  font-size: rem-calc(14);
+  font-size: 14px;
 
   background: $color;
   cursor: pointer;
+
+  color: #fff;
 
   &:focus{
 
@@ -42,9 +41,19 @@ button {
     background-color: #39a2d8;
   }
 }
+ 
+ h1,
+ h2 {
+  margin-bottom: 10px;
+  
+  font-family: 'PFDinTextCondPro';
+  color:  #000000;
+  font-size: 26px;  
+ }
 
 main {
   min-height: calc(100vh - 160px);
+  margin: 0 auto;
 
   background: #fff;
 }

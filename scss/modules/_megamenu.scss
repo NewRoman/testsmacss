@@ -1,0 +1,137 @@
+.m-megamenu {
+  @include border-radius(5px 5px 0 0);
+
+  margin: 0;
+  padding: 0;
+
+  height: 36px;
+
+  background-color:  #f7941d;
+}
+
+.list-in-content-block {
+  margin: 0;
+}
+
+ul.m-megamenu{
+  font-size: 14px;
+}
+
+li.megamenu-item {
+  position: static;
+
+  margin: 0;
+  display: inline-block;
+
+  &-red-bg {
+    background-color: red;
+  }
+
+  &:hover {
+    &>.megamenu-item-content {
+      display: flex;
+
+    }
+    &>a.megamenu-item-link {
+      background-color:  #219cd7;
+    }
+  }
+
+  &:first-of-type {
+
+     a.megamenu-item-link:before {
+      content: none;
+    }
+  }
+}
+
+a.megamenu-item-link {
+  @include border-radius(5px 5px 0 0);
+  @include transition(.3s);
+
+  position: relative;
+
+  padding: rem-calc(11) rem-calc(11);
+  display: inline-block;
+  line-height: 1;
+  float: left;
+  text-decoration: none;
+  background-color: #f7941d;
+
+  color: #fff;
+
+  &-red-bg {
+    background-color: red;
+  }
+
+
+  &:before {
+    @include transition(.3s);
+    @include stretch(0, false, false, 0);
+
+    content: '';
+
+    margin-top: rem-calc(7);
+
+    width: rem-calc(1);
+    height: rem-calc(23);
+    display: block;
+    
+    background: #fff!important;
+  }
+}
+
+
+.megamenu-item-content {
+  position: absolute;
+  top: 100%;
+  z-index: 9999;
+
+  padding: 20px 20px;
+  display: none;
+
+  background: $white;
+  white-space: nowrap;
+  
+  &:hover {
+    display: flex;
+  }
+}
+
+.item-content-block {
+  display: inline-block;
+  float: left;
+
+  margin-right: rem-calc(25);
+}
+
+a.content-item-head {
+  display: block;
+
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: rem-calc(17);
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+ul.list-in-content-block {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: rem-calc(10);
+
+  font-size: 0;
+
+
+  li {
+    list-style: none;
+
+    max-width: rem-calc(200);
+
+    a {
+      color:  #219cd7;
+      font-family: Tahoma, Verdana, Segoe, sans-serif;
+      font-size: rem-calc(17);
+      text-decoration: underline;
+    }
+  }      
+}

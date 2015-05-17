@@ -1,0 +1,76 @@
+.m-head-top {
+  position: relative;
+
+  background-color: rgba(255, 255, 255,0.5);
+
+  padding: 9px 0;
+
+  .row>div {
+    margin-right: 22px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  a {
+    border-bottom: 1px dashed #302c89;
+    color: #302c89;
+    font-size: rem-calc(14);
+    text-decoration: none;
+  }
+
+  &-city {
+
+  }
+  
+  &-phone {
+    .tel-number {
+
+      display: inline-block;
+      vertical-align: bottom;
+      line-height: 13px;
+    }
+  }
+
+  &-call-back {
+
+  }
+
+  &-consultation {
+    position: relative;
+    bottom: -1px;
+    margin-left: rem-calc(12);
+    margin-right: rem-calc(12);
+  }
+
+  &-m-head-look {
+    i.icons-star {
+    $size: rem-calc(16);
+
+    width: $size;
+    height: $size;
+
+    }
+  }
+
+  &-course {
+    .currency {
+      margin-left: 2px;
+
+      font-weight: 600;
+      font-size: 0.91rem;
+
+      i {
+        font-style: normal;
+
+        font-weight: 600;
+        color: #219cd7;
+      }
+    }
+  }
+}
+
+
+
+  

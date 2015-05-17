@@ -1,0 +1,30 @@
+.m-trust-us {  
+  width: 38%;
+  padding: 0 0 0 rem-calc(20);
+  margin-top: rem-calc(20);
+  
+  &-title {
+    margin-bottom: rem-calc(16);
+    margin-top: rem-calc(7);
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: rem-calc(20);
+  }
+
+  &-images {
+    img {
+      @include inline-block;
+  
+      margin-right: 3%;
+      margin-bottom: rem-calc(15);
+      width: 20.9%;
+    }
+  }
+
+  &-stat {
+    margin-bottom: rem-calc(15);
+
+    div {
+      width: 45%;
+    }
+  }
+} 

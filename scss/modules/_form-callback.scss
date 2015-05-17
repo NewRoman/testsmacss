@@ -1,0 +1,74 @@
+.m-form {
+
+  &-title {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: rem-calc(10);
+    line-height: 1;
+
+    color:  #000000;
+    font-size: rem-calc(18);
+  }
+
+  &-text {
+    margin-bottom: rem-calc(24);
+    padding: 0 rem-calc(15);
+
+    color:  #010102;
+    font-size: rem-calc(14);
+    line-height: 1.4;
+  }
+
+  i {
+    vertical-align: top;
+  }
+
+  &-area {
+    width: rem-calc(250);
+    padding: rem-calc(20) rem-calc(30);
+    border-radius: rem-calc(5);
+    background-color:  #60c2f1;
+
+    text-align: center;
+
+    &-title {
+      line-height: rem-calc(17);
+    }
+
+    &-answer {
+      color: #fff;
+      font-size: rem-calc(12);
+    }
+
+    &-put-email {
+      text-align: center;
+      color:  #2f2483;
+      font-size: 12px;
+      text-decoration: underline;
+    }
+
+    i {
+      @include inline-block;
+
+      float: left;
+      margin-top: 5px;
+      
+    }
+
+    input, textarea {
+      height: 1.875rem;
+      border-radius: 0.3125rem;
+      font-size: 0.875rem;
+      display: inline-block;
+      width: 88%;
+      float: right;
+    } 
+  }
+
+  button {
+    margin: 0.6875rem auto 0;
+  }
+}
+
+
+

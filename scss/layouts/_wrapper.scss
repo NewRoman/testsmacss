@@ -1,0 +1,20 @@
+.row {
+  position: relative;
+
+  padding: 0 rem-calc(20);
+}
+
+.row .row {
+  min-width:0;
+}
+
+.row .row .row{
+  min-width:0;
+}
+.l-page-wrapper {
+  position: relative;
+
+  margin: 0 auto;
+  max-width: 1100px;
+  min-width: 885px;
+}

@@ -1,15 +1,12 @@
-<div class="pagination ">
-  <div>
-  	<ul>
-  		<li><a href=""><i class="fa fa-caret-left"></i></a></li>
-  		<li><a href=""><i class="fa fa-backward"></i></a></li>
-  		<li><a href="">1</a></li>
-  		<li><a class="active" href="">2</a></li>
-  		<li><a href="">3</a></li>
-  		<li><a href="">4</a></li>
-  		<li><a href="">5</a></li>
-  		<li><a class="end" href=""><i class="fa fa-forward"></i></a></li>
-  		<li><a class="end" href=""><i class="fa fa-caret-right"></i></a></li>
-  	</ul>
-  </div>
-</div>
+
+<ul class="m-pagination ">
+	<li class="m-pagination-item"><a class="m-pagination-link" href=""><i class="fa fa-caret-left"></i></a></li>
+	<li class="m-pagination-item"><a class="m-pagination-link" href=""><i class="fa fa-backward"></i></a></li>
+	<li class="m-pagination-item"><a class="m-pagination-link" href="">1</a></li>
+	<li class="m-pagination-item"><a class="active m-pagination-link" href="">2</a></li>
+	<li class="m-pagination-item"><a class="m-pagination-link" href="">3</a></li>
+	<li class="m-pagination-item"><a class="m-pagination-link" href="">4</a></li>
+	<li class="m-pagination-item"><a class="m-pagination-link" href="">5</a></li>
+	<li class="m-pagination-item"><a class="end m-pagination-link" href=""><i class="fa fa-forward"></i></a></li>
+	<li class="m-pagination-item"><a class="end m-pagination-link" href=""><i class="fa fa-caret-right"></i></a></li>
+</ul>

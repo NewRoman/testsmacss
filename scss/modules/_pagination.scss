@@ -1,0 +1,39 @@
+.m-pagination {
+  margin-top: 29px;
+  margin-bottom: 25px;
+
+  &-item {
+    @include inline-block;    
+  }
+
+  &-link {
+    @include inline-block;
+    @include border-radius(20px);
+
+    height: 22px;
+    width: 22px;
+
+    background-color: #219cd7;
+
+    text-align: center;
+    color: #FFF;
+    font-size: 14px;
+
+    &:hover {
+      background-color: #f7941d;
+    }    
+
+    .fa-backward,
+    .fa-forward {
+      margin-left: 4px;
+
+      vertical-align: middle;
+      font-size: 10px;
+    }
+
+    .fa-backward {
+      margin-right: 6px 
+    }
+  }
+}
+

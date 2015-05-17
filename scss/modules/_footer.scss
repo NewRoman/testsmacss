@@ -1,102 +1,73 @@
-
-
-.foot{
-  z-index: -15;
-}
-
-footer {
+.m-footer {
   position: relative;
 
   min-height: rem-calc(60);
   padding: rem-calc(15) 0;
 
   background-color:  #96dbfc;
-  
-  .row {
-    font-size: 0;
-    
-    .city {
-      bottom: -3px;
-      div.dropdown {
-        div{
-          top: auto;
-          bottom: 44px;
-        }
+
+  &-phone {
+    margin-left: rem-calc(26);
+    margin-right: rem-calc(17);
+  }
+
+  &-mail i {
+    width: rem-calc(16);
+    height: rem-calc(12);
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  &-social {
+    margin-left: rem-calc(26);
+
+    &-icon-conainer {
+      display: inline-block;
+      float: left;
+      margin-left: rem-calc(10);
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      i {
+        display: inline-block;
+        vertical-align: middle;
       }
     }
-    & > * {
-      display: inline-block;
 
-      white-space: nowrap;
+    .vk,
+    .mailru {
+      @include border-radius(5px);
 
-      line-height: 1;
-      vertical-align: middle;
+      background-color: #52789f;
 
-      a {
-        color: #2f2483;
-        text-decoration: underline;
+      span {
+        display: inline-block;
+        padding: 0 rem-calc(6);
+
+        vertical-align: middle;
+
+        color:  #fff;
+        font-size: rem-calc(10);
+        font-family: Tahoma, Verdana, Segoe, sans-serif;
       }
+    }
 
-      &.phone {
-        margin-left: rem-calc(26);
-        margin-right: rem-calc(17);
-      }
-
-      &.mail {
-
-        i {
-          width: rem-calc(16);
-          height: rem-calc(12);
-          display: inline-block;
-          vertical-align: bottom;
-        }
-      }
-
-      &.soc {
-        margin-left: rem-calc(26);
-
-        & > div {
-          display: inline-block;
-          float: left;
-          margin-left: rem-calc(10);
-
-          &:first-child {
-            margin-left: 0;
-          }
-
-          i {
-            display: inline-block;
-            vertical-align: middle;
-          }
-        } 
-
-        .vk,
-        .mailru {
-          @include border-radius(5px);
-
-          background-color: #52789f;
-
-          span {
-            display: inline-block;
-            padding: 0 rem-calc(6);
-
-            vertical-align: middle;
-
-            color:  #fff;
-            font-size: rem-calc(10);
-            font-family: Tahoma, Verdana, Segoe, sans-serif;
-          }
-        }
-
-        .mailru {
-          background-color:  #3273b6;
-        }
-      }
-
-      &.development {
-        float: right;
-        margin: rem-calc(7) 0 0 0;
-      }
+    .mailru {
+      background-color:  #3273b6;
     }
   }
+
+  &-development {
+    float: right;
+    margin: rem-calc(7) 0 0 0;
+  }  
 }
+
+
+
+
+
+
+

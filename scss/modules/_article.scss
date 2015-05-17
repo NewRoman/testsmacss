@@ -1,0 +1,143 @@
+@import "compass/css3/columns";
+
+.m-article {
+  @include border-radius(rem-calc(5));
+
+  position: relative;
+
+  padding: rem-calc(30);
+  margin-bottom: rem-calc(37);  
+
+  font-size: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &-red-bordered {
+    border: 1px solid #f7941d;
+  }
+ &-gray-bordered {
+    border: 1px solid gray;
+  }
+
+ .tag-article {
+    @include border-radius(5px);
+
+    display: block;
+    padding: 0 rem-calc(12);
+
+    height: rem-calc(25);
+
+    margin-top: rem-calc(-12);
+
+    line-height: rem-calc(25);
+    color:  #fff;
+    font-size: rem-calc(14);
+
+    &-blue {
+      @include stretch(0, false, false, 0);
+
+      margin-left: rem-calc(28);
+
+      background: #219cd7;
+    }
+  }
+
+  .article-images-gallery {
+    position: relative;
+    height: 12.1rem;
+    vertical-align: top; 
+    display: inline-block;
+    width: 37%;
+
+    &-counter {
+
+      @include stretch(false, 0, 0, false);
+      @include border-radius(3px);
+
+      padding: 6px 11px;
+
+      cursor: pointer;
+      background: rgba(0,0,0,0.7);
+      pointer-events: none;
+      display: block;
+
+      i {
+        vertical-align: middle;
+      }
+
+      .count-gallery-images {
+        line-height: 1;
+        display: inline-block;
+        vertical-align: text-top;
+        color:  #fff;
+        font-size: 14;
+        font-weight: 100;
+      }
+    }
+  }
+}
+
+
+.article-description {
+  vertical-align: top;
+  display: inline-block;
+  max-width: 390px;
+  margin-left: 22px;
+
+  .article-title {
+    line-height: 1;
+    display: block;
+
+    margin-bottom: rem-calc(17);
+
+    color:  #219cd7;
+    font-size: rem-calc(14);
+  }
+
+  .article-text {
+    color:  #000000;
+    font-size: rem-calc(14);
+    line-height: rem-calc(20);
+  }
+
+  .links-block {
+    height: rem-calc(70);
+    margin-top: rem-calc(26);
+
+    .in-links-block {
+      display: inline-block;
+      margin-bottom: rem-calc(12);
+      vertical-align: top;
+      width: 45%;
+
+      i {
+        vertical-align: top;
+        margin-right: rem-calc(10);
+      }
+    }
+
+    .links-block-link {
+      display: inline-block;
+      max-width: calc(100% - 26px);
+      line-height: 1;
+
+      a {
+        line-height: 1;
+
+        color:  #219cd7;
+        font-size: rem-calc(14);
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

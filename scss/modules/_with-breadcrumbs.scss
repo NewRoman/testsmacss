@@ -1,0 +1,35 @@
+.breadcrumbs {
+  margin: 0; 
+  margin-bottom: 20px;
+  padding-left: 5px;
+  background-color: transparent;
+  border: 0;
+
+  *:before{
+    font-size: 1rem;
+    color: #000;
+  }
+}
+
+.breadcrumbs-item {
+  font-size: 0.75rem;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  text-transform: none;
+  text-align: left;
+  .bc-item-link{
+    font-size: 0.75rem;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    color:  #219cd7;
+    text-decoration: underline;
+    text-transform: none;
+    text-align: left;
+  }
+  &:before {
+    margin: 0 4px;
+  }
+}
+
+.title-with-breadcrumbs {
+  margin: 0;
+}
+

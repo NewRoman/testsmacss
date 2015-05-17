@@ -1,130 +1,100 @@
-<div class="row wrap-trust-us">
-  <div class="small-7 columns trust-us">
-    <ul class="row-menu">
-      <li>
-        <ul>
-          <li><a href="">Туры</a></li>
-          <li><a href="">Страны</a></li>
-          <li><a href="">Лето 2015</a></li>
+<div class="l-statistic">
+  <div class="m-tours-lists inline-block">
+    
+    <ul class="m-tours-lists-list">
+      <li class="m-tours-lists-list-item">
+        <ul class="m-tours-lists-sublist">
+          <li class="m-tours-lists-sublist-item"><a class="list-name" href="">Туры</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Страны</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Лето 2015</a></li>
         </ul>        
       </li>
-      <li>
-        <ul>
-          <li><a href="">Акции</a></li>
-          <li><a href="">на туры</a></li>
-          <li><a href="">на перелеты</a></li>
+      <li class="m-tours-lists-list-item">
+        <ul class="m-tours-lists-sublist">
+          <li class="m-tours-lists-sublist-item"><a class="list-name" href="">Туры</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Страны</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Лето 2015</a></li>
         </ul>        
       </li>
-      <li>
-        <ul>
-          <li><a href="">Чем заняться</a></li>
-          <li><a href="">Шоппинг</a></li>
-          <li><a href="">Выставки</a></li>
-          <li><a href="">Этнографи</a></li>
-          <li><a href="">Лечебный туризм</a></li>
+      <li class="m-tours-lists-list-item">
+        <ul class="m-tours-lists-sublist">
+          <li class="m-tours-lists-sublist-item"><a class="list-name" href="">Туры</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Страны</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Лето 2015</a></li>
         </ul>        
       </li>
-      <li>
-        <ul>
-           <li><a href="">Акции</a></li>
-          <li><a href="">на туры</a></li>
-          <li><a href="">на перелеты</a></li>
-        </ul>
+      <li class="m-tours-lists-list-item">
+        <ul class="m-tours-lists-sublist">
+          <li class="m-tours-lists-sublist-item"><a class="list-name" href="">Туры</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Страны</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Лето 2015</a></li>
+        </ul>        
       </li>
     </ul>
 
-    <ul class="row-menu">
-      <li>
-        <ul>
-          <li><a href="">Обучение</a></li>
-          <li><a href="">отдых в Украине</a></li>
-          <li><a href="">Выставки</a></li>
-          <li><a href="">Визы и посольства</a></li>
-          <li><a href="">Купить</a></li>
-        </ul>
+    <ul class="m-tours-lists-list">
+      <li class="m-tours-lists-list-item">
+        <ul class="m-tours-lists-sublist">
+          <li class="m-tours-lists-sublist-item"><a class="list-name" href="">Туры</a></li>
+          <li class="m-tours-lists-sublist-item"><a  href="">Страны</a></li>
+          <li class="m-tours-lists-sublist-item"><a  href="">Лето 2015</a></li>
+        </ul>        
       </li>
-    </ul>
-
-    <ul class="row-menu">
-      <li>
-        <ul>
-          <li><a href="">Авиабилеты</a></li>
-          <li><a href="">Спецпредложения</a></li>
-          <li><a href="">Выставки</a></li>
-          <li><a href="">Расписания</a></li>
-          <li><a href="">Полезное</a></li>
-        </ul>     
-      </li> 
-
-      <li>
-        <ul>
-          <li><a href="">Бронирование</a></li>
-          <li><a href="">ЖД билеты</a></li>
-          <li><a href="">Автобусные билеты</a></li>
-          <li><a href="">Автобусные туры</a></li>
-          <li><a href="">Отели</a></li>
-          <li><a href="">Круизы</a></li>
-        </ul>     
-      </li>  
-
-      <li>
-        <ul>
-          <li><a href="">Услуги</a></li>
-          <li><a href="">Визы</a></li>
-          <li><a href="">Образцы документов</a></li>
-          <li><a href="">Сертификаты</a></li>
-          <li><a href="">Отели</a></li>
-          <li><a href="">Круизы</a></li>
-        </ul>     
-      </li>    
-
-       <li>
-        <ul>
-          <li><a href="">Бронирование</a></li>
-          <li><a href="">ЖД билеты</a></li>
-          <li><a href="">Автобусные билеты</a></li>
-          <li><a href="">Автобусные туры</a></li>
-          <li><a href="">Отели</a></li>
-          <li><a href="">Круизы</a></li>
-        </ul>     
-      </li>    
+      <li class="m-tours-lists-list-item">
+        <ul class="m-tours-lists-sublist">
+          <li class="m-tours-lists-sublist-item"><a class="list-name" href="">Туры</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Страны</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Лето 2015</a></li>
+        </ul>        
+      </li>
+      <li class="m-tours-lists-list-item">
+        <ul class="m-tours-lists-sublist">
+          <li class="m-tours-lists-sublist-item"><a class="list-name" href="">Туры</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Страны</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Лето 2015</a></li>
+        </ul>        
+      </li>
+      <li class="m-tours-lists-list-item">
+        <ul class="m-tours-lists-sublist">
+          <li class="m-tours-lists-sublist-item"><a class="list-name" href="">Туры</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Страны</a></li>
+          <li class="m-tours-lists-sublist-item"><a href="">Лето 2015</a></li>
+        </ul>        
+      </li>
     </ul>
   </div>
 
-  <div class="small-5 columns aside-trust-us">
-    <h4>Нам доверили отдых сотрудники</h4>
-    <div class="plhold"><img src="images/trust-us-plhold.png" alt=""></div>
-    <div class="plhold"><img src="images/trust-us-plhold.png" alt=""></div>
-    <div class="plhold"><img src="images/trust-us-plhold.png" alt=""></div>
-    <div class="plhold"><img src="images/trust-us-plhold.png" alt=""></div>
-    <div class="plhold"><img src="images/trust-us-plhold.png" alt=""></div>
-    <div class="plhold"><img src="images/trust-us-plhold.png" alt=""></div>
-    <div class="plhold"><img src="images/trust-us-plhold.png" alt=""></div>
-    <div class="plhold"><img src="images/trust-us-plhold.png" alt=""></div>
+  <div class="m-trust-us inline-block">
+    <h4 class="m-trust-us-title">Нам доверили отдых сотрудники</h4>
+    <div class="m-trust-us-images text-center">
+      <img src="images/trust-us-plhold.png" alt="">      
+      <img src="images/trust-us-plhold.png" alt="">      
+      <img src="images/trust-us-plhold.png" alt="">      
+      <img src="images/trust-us-plhold.png" alt="">      
+      <img src="images/trust-us-plhold.png" alt="">      
+      <img src="images/trust-us-plhold.png" alt="">
+      <img src="images/trust-us-plhold.png" alt="">
+      <img src="images/trust-us-plhold.png" alt="">
+    </div>
   
-    <h4>Статистика</h4>
+    <h4 class="m-trust-us-title">Статистика</h4>
     
-    <div class="statistic">
-      <div>
+    <div class="m-trust-us-stat clearfix">      
+      <div class="left">
         <span>18 лет</span>
-        на рынке
-      </div>
-      <div>
+        <i>на рынке</i>   
+      
         <span>1 млн+</span>
-        отправили в туры
+        <i>отправили в туры</i>             
+      </div>
+
+      <div class="right">
+        <span>18 лет</span>
+        <i>на рынке</i>   
+      
+        <span>1 млн+</span>
+        <i>отправили в туры</i>             
       </div>
     </div>
-
-    <div class="statistic">
-      <div>
-        <span>1856 клиентов</span>
-        сейчас отдыхают в 25 странах
-      </div>
-      <div>
-        <span>50 стран мира</span>
-        от бюджетного до VIP отдыха
-      </div>
-    </div>
-
   </div>
 </div>

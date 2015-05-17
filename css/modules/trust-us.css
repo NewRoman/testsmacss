@@ -1,0 +1,74 @@
+/*
+Error: Undefined mixin 'border-radius'.
+        on line 7 of /home/neoriginal/www/testsmacss/scss/modules/trust-us.scss, in `border-radius'
+        from line 7 of /home/neoriginal/www/testsmacss/scss/modules/trust-us.scss
+
+2: // @import "compass/css3/border-radius";
+3: // @import "compass/layout/stretching";
+4: 
+5: // @import "utilities/classes.scss";
+6: .m-trust-us {
+7:     @include border-radius(5px 5px 0 0);
+8:     
+9:     width: 61.9%;
+10:     padding: rem-calc(17) 0 rem-calc(26) rem-calc(20);
+11:     margin-top: rem-calc(30);
+12:     background: no-repeat url('../images/trust-us-cloud-bg.png'); 
+
+Backtrace:
+/home/neoriginal/www/testsmacss/scss/modules/trust-us.scss:7:in `border-radius'
+/home/neoriginal/www/testsmacss/scss/modules/trust-us.scss:7
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:348:in `block in visit_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/stack.rb:98:in `block in with_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/stack.rb:98:in `with_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:346:in `visit_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:430:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/tree/root_node.rb:20:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/engine.rb:268:in `render'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/vendor/listen/lib/listen/listener.rb:252:in `call'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/var/lib/gems/1.9.1/gems/sass-3.4.10/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'border-radius'.\A         on line 7 of /home/neoriginal/www/testsmacss/scss/modules/trust-us.scss, in `border-radius'\A         from line 7 of /home/neoriginal/www/testsmacss/scss/modules/trust-us.scss\A \A 2: // @import \"compass/css3/border-radius\";\A 3: // @import \"compass/layout/stretching\";\A 4: \A 5: // @import \"utilities/classes.scss\";\A 6: .m-trust-us {\A 7:     @include border-radius(5px 5px 0 0);\A 8:     \A 9:     width: 61.9%;\A 10:     padding: rem-calc(17) 0 rem-calc(26) rem-calc(20);\A 11:     margin-top: rem-calc(30);\A 12:     background: no-repeat url('../images/trust-us-cloud-bg.png'); "; }
